@@ -1,13 +1,18 @@
-<form name="form" id="form" action="#">
-	<label>Nombre :</label>
-	<input type="text" name="name">
-	<br/>
-	<label>Apellido</label>
-	<input type="text" name="apellido">
-	<br/>
-	<label>Correo</label>
-	<input type="email" name="email">
-	<br/>
-	<input type="submit">
-	
-</form>
+<h1>Registro de alumnos</h1>
+
+
+Nombre:
+<?php
+foreach ($query as $alumno) {
+    ?>
+
+    <li><?php echo $alumno->nombre; ?></li>
+    <li><?php echo $alumno->correo; ?></li>
+
+
+<?php } ?>
+<?php
+?>
+
+
+
